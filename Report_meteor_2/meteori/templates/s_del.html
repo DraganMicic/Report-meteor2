@@ -1,0 +1,17 @@
+{%  extends 'master.html' %}
+
+{% block title %}
+    Delete successfully!
+{% endblock %}
+
+{%  block content %}
+    <h3> Meteor successfully deleted! </h3>
+    <br>
+    <div>
+        <a href="{% url 'met_app:my_meteors'%}">Back to my meteors page.</a>
+    </div>
+    <div>
+        <a href="{% url 'met_app:all_meteors'%}">Back to home page.</a>
+    </div>
+
+{% endblock %}
